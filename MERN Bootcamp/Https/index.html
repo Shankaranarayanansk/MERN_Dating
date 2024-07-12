@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loadData()
+        {
+            const xhr = new XMLHttpRequest();//instance of XMLHttpRequest
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/albums/1', true); //true makes it asynchronous
+            xhr.onload = function()//used to load the 
+            {
+                if(xhr.status == 200)
+            {
+                const data = JSON.parse(xhr.responseText);//every time the string to object
+                const outputdiv = document.getElementById('output');
+            }
+            }
+        }
+    </script>
+</body>
+</html>

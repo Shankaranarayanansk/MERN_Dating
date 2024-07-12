@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div id="myid" class="a"></div>
+    <div class="my"></div>
+    <input type="text" class="a">
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Multiplication Tables from 1 to 30</h1>
+<div id="tables-container"></div>
+
+<script>
+    function generateTable(number) {
+        let tableHtml = `<table><thead><tr><th colspan="2">Table of ${number}</th></tr></thead><tbody>`;
+        for (let i = 1; i <= 10; i++) {
+            tableHtml += `<tr><td>${number} x ${i}</td><td>${number * i}</td></tr>`;
+        }
+        tableHtml += '</tbody></table>';
+        return tableHtml;
+    }
+
+    function displayTables() {
+        const container = document.getElementById('tables-container');
+        for (let i = 1; i <= 30; i++) {
+            container.innerHTML += generateTable(i);
+        }
+    }
+
+    window.onload = displayTables;
+</script>
+
+</body>
+</html> 
+

@@ -1,0 +1,28 @@
+NPM is the Standard package manager for Node.js
+As of Sep, 2022 it has around 2.1 Million packages listed in NPM
+registry
+
+yarn and pnpm are the alternative
+
+used for both front and back
+
+npmm i is used to install the package.json dependencies
+
+npm i <package> is used to particular package
+
+
+-g  -> install globally
+
+npm i <package>@version
+
+npm update is used to updated it 
+
+npm run <task-name>
+
+npm list 
+
+npm view 
+
+npm uninstall is used to remove
+
+npm help list all commands
