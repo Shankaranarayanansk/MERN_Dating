@@ -7,6 +7,7 @@ import Users from './Pages/Users';
 import Navbar from './Components/Navbar';
 import User from './Pages/User';
 import NotFound from './Pages/Nopage';
+import './App.css'
 
 const App = () => {
   return (
