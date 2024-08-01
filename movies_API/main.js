@@ -2,6 +2,9 @@ import express from "express"
 import movieRoutes from "./routes/movies.js"
 import connectDB from "./lib/db.js";
 const app = express();
+//middleware 
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 
 const Port = 7869;
 
