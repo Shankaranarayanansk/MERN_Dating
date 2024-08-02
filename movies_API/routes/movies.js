@@ -1,13 +1,20 @@
 import express from "express";
-import { getid, remove, update , edit} from "../controllers/controller.js";
+import { getAll, create, getById, update, remove } from "../controllers/controller.js";
 const router = express.Router();
 
-router.get('/',getid );
+// Get all movies
+router.get('/', getAll);
 
-router.post("/", update);
+// Create a new movie
+router.post("/", create);
 
-router.put("/:id",edit);
+// Get a single movie by ID
+router.get("/:id", getById);
 
+// Update a movie
+router.put("/:id", update);
+
+// Delete a movie
 router.delete("/:id", remove);
 
 export default router;
