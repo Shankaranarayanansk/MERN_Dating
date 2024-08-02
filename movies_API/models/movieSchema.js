@@ -1,10 +1,10 @@
 import { model, Schema } from "mongoose";
 
-const Schema = new Schema({
+const schema = new Schema({
     title:String,
-    review :String
+    desc:String
 })
 
 
-const Movie = model("Movie",Schema)
+const Movie = model("Movie",schema)
 export default Movie 
