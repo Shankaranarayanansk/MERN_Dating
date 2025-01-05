@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taversingt</title>
+</head>
+<body>
+    <div class="parent"> 
+        java
+        <div class="child1">content1</div>
+        dynamically typed
+        <div class="child2">content2</div>
+        1234
+        <div class="child3">content3</div>
+        Single thread
+    </div>
+        <button onclick="traverseparent()">Click ME!</button>
+        <button onclick="selectChild()">Get details</button>
+        <button onclick="sibilings()">Siblings</button>
+    <script>
+        function traverseparent ()
+        {
+
+            let getparent = document.querySelector(".child1")
+            console.log(getparent.parentElement)//give only the tags
+            console.log(getparent.parentNode)
+            let getnode = document.querySelector("html")
+            console.log(getnode.parentElement)//give null
+            console.log(getnode.parentNode)
+        }
+        function selectChild()
+        {
+            let getElementsByClass = document.querySelector(".parent")
+            console.log(getElementsByClass.childElementCount)//element count of the class in it but leaves the normal text
+            console.log(getElementsByClass.childNodes)//also give with the text node
+            console.log(getElementsByClass.children)//gives only the class content that the html collections no node 
+            console.log(getElementsByClass.firstChild)
+            console.log(getElementsByClass.firstElementChild)
+            console.log(getElementsByClass.lastChild)
+            console.log(getElementsByClass.lastElementChild)
+        }   
+
+        //sibilings
+        function sibilings()
+        {
+            let child = document.querySelector(".child1")
+            console.log(child)
+            console.log(child.nextElementSibling)
+            console.log(child.nextSibling)
+
+        }
+
+
+        // Node -->Element,attribute,text Node all will come in it 
+       
+    </script>
+</body>
+</html>

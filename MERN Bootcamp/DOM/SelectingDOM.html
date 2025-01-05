@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selecting</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h1>Select the DOM</h1>
+    <p class="p1">Content 1</p>
+    <p class="p2">Content 2</p>
+    <p class="p3">Content 3</p>
+    <p id="p4">Content 4</p>
+    <input type="text" placeholder="enter name" name="input1">
+    <script>
+        // console.log(document.head)
+        let a=document.getElementsByTagName("h1")
+        let b =document.getElementsByClassName("p2")
+        let uni = document.getElementById("p4")
+        let nameAttribute = document.getElementsByName("input1")
+        let query = document.querySelector("h1")
+        let queryclass= document.querySelector(".p2")
+        let queryid= document.querySelector("#p4")
+        let queryall = document.querySelectorAll("h1")
+        let create = document.createElement("h3")
+        create.innerText ="ithu innner text"
+        document.body.append(create)
+        console.log(create)
+        let check = document.querySelector("h3".innerHTML)
+        console.log(check)
+        console.log(query)
+        console.log(queryclass)
+        console.log("innerhtm "+queryclass.innerHTML)
+        console.log(queryid)
+        console.log(queryall)
+        console.log(nameAttribute)
+        console.log(uni)
+        console.log(b)
+        console.log(a)
+    </script>
+</body>
+</html>

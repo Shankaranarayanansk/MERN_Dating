@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
-const Port = 7869;
+const Port = process.env.X_ZOHO_CATALYST_LISTEN_PORT;
 
 app.get ("/",(req,res)=>
 {

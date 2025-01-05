@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "10148000000008001",
+      "name": "movie-api",
+      "domain": {
+        "id": "50022501770",
+        "name": "movie-api-60033138717.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60033138717",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
